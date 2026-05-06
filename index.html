@@ -1,71 +1,45 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html><html lang=en>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
 <title>Wei Kiat (Joven) Soh</title>
 <style>
-  :root { --bg: #fff; --fg: #111; --mute: #666; }
-  html.dark { --bg: #111; --fg: #eee; --mute: #888; }
-  html, body { background: var(--bg); color: var(--fg); }
-  body { font: 16px/1.6 ui-monospace, Menlo, Consolas, monospace; max-width: 640px; margin: 4rem auto; padding: 0 1.25rem; text-transform: lowercase; }
-  h1 { font-size: 1.4rem; margin: 0 0 .25rem; }
-  h2 { font-size: 1rem; margin: 2rem 0 .5rem; letter-spacing: .08em; color: var(--mute); }
-  p, li { margin: .25rem 0; }
-  ul { padding: 0; list-style: none; }
-  a { color: inherit; text-underline-offset: 3px; }
-  .row { display: flex; justify-content: space-between; gap: 1rem; }
-  .row span:last-child { color: var(--mute); white-space: nowrap; }
-  .sub { color: var(--mute); font-size: .92rem; }
-  #t { position: fixed; top: 1rem; right: 1rem; background: none; border: 1px solid var(--mute); color: var(--fg); font: inherit; font-size: .85rem; padding: .15rem .5rem; cursor: pointer; border-radius: 3px; }
+:root{--bg:#fff;--fg:#111;--m:#666}
+html.d{--bg:#111;--fg:#eee;--m:#888}
+html,body{background:var(--bg);color:var(--fg)}
+body{font:16px/1.6 ui-monospace,Menlo,monospace;max-width:640px;margin:4rem auto;padding:0 1.25rem;text-transform:lowercase}
+h1{font-size:1.4rem;margin:0}
+h2{font-size:1rem;margin:2rem 0 .5rem;color:var(--m);letter-spacing:.08em}
+p,li{margin:.25rem 0}
+ul{padding:0;list-style:none}
+a{color:inherit;text-underline-offset:3px}
+.s{color:var(--m);font-size:.92rem}
+[data-d]::after{content:attr(data-d);color:var(--m);float:right}
+#t{position:fixed;top:1rem;right:1rem;background:none;border:1px solid var(--m);color:var(--fg);font:inherit;padding:.15rem .5rem;cursor:pointer}
 </style>
-</head>
-<body>
-
-<button id="t" onclick="document.documentElement.classList.toggle('dark')">◐</button>
-
+<button id=t onclick="document.documentElement.classList.toggle('d')">◐</button>
 <h1>Wei Kiat (Joven) Soh</h1>
-<p class="sub">Software Engineer · San Francisco Bay Area</p>
-<p class="sub">
-  <a href="mailto:sohweikiat@gmail.com">email</a> ·
-  <a href="https://github.com/jovensoh">github</a> ·
-  <a href="https://www.linkedin.com/in/wei-kiat-soh-981b51213/">linkedin</a>
-</p>
-
-<h2>About</h2>
-<p>I build things that work and back bets that shouldn't</p>
-
-<h2>Experience</h2>
-<ul>
-  <li class="row"><span><b><a href="https://gatherat.ai">gather</a></b> — Software Engineer (infra)</span><span>2025 – now</span></li>
-  <li class="row"><span><b>DSTA</b> — AI Engineer (computer vision, drones)</span><span>2025</span></li>
-  <li class="row"><span><b>Legback / Immibot</b> — Software Engineer (legal agents)</span><span>2024</span></li>
-  <li class="row"><span><b><a href="https://x.com/SaaSVentures">SaaSVentures</a></b> — Software Engineer (market making)</span><span>2024</span></li>
+<p class=s>Software Engineer · San Francisco Bay Area
+<p class=s><a href="mailto:sohweikiat@gmail.com">email</a> · <a href=https://github.com/jovensoh>github</a> · <a href="https://www.linkedin.com/in/wei-kiat-soh-981b51213/">linkedin</a>
+<h2>About</h2><p>I build things that work and back bets that shouldn't
+<h2>Experience</h2><ul>
+<li data-d="2025 – now"><b><a href=https://gatherat.ai>gather</a></b> — Software Engineer (infra)
+<li data-d="2025"><b>DSTA</b> — AI Engineer (computer vision, drones)
+<li data-d="2024"><b>Legback / Immibot</b> — Software Engineer (legal agents)
+<li data-d="2024"><b><a href=https://x.com/SaaSVentures>SaaSVentures</a></b> — Software Engineer (market making)
 </ul>
-
-<h2>Education</h2>
-<ul>
-  <li class="row"><span><b>NUS</b> — B.S. Computer Science</span><span>2023 – 2027</span></li>
-  <li class="row"><span><b>Stanford University</b> — MS&amp;E</span><span>2025</span></li>
-  <li class="row"><span><b>Korea University</b> — ACC</span><span>2024</span></li>
+<h2>Education</h2><ul>
+<li data-d="2023 – 2027"><b>NUS</b> — B.S. Computer Science
+<li data-d="2025"><b>Stanford University</b> — MS&amp;E
+<li data-d="2024"><b>Korea University</b> — ACC
 </ul>
-
-<h2>Projects</h2>
-<ul>
-  <li><b>Polymarket</b> — liquidity provider, top 100 of 130,000+ LPs</li>
-<li><a href="https://github.com/source-academy"><b>Source Academy</b></a> — open-source contributor, NUS CS learning platform</li>
-  <li><a href="https://schediopartners.com/"><b>Schedio + Partners</b></a> — site architect</li>
+<h2>Projects</h2><ul>
+<li><b>Polymarket</b> — liquidity provider, top 100 of 130,000+ LPs
+<li><a href=https://github.com/source-academy><b>Source Academy</b></a> — open-source contributor, NUS CS learning platform
+<li><a href=https://schediopartners.com/><b>Schedio + Partners</b></a> — site architect
 </ul>
-
-<h2>Awards</h2>
-<ul>
-  <li class="row"><span><a href="https://www.credential.net/b8549718-faa6-433c-8ad6-bede449cf0f2##acc.D5SqejPV">1st Runners-up, Citadel Terminal Live Asia</a></span><span>2024</span></li>
-  <li class="row"><span>1st Runners-up, FairPrice FITHack</span><span>2022</span></li>
-  <li class="row"><span>1st &amp; 2nd Runners-up (team), .22 Revolver Shooting</span><span>2017–18</span></li>
+<h2>Awards</h2><ul>
+<li data-d="2024"><a href="https://www.credential.net/b8549718-faa6-433c-8ad6-bede449cf0f2##acc.D5SqejPV">1st Runners-up, Citadel Terminal Live Asia</a>
+<li data-d="2022">1st Runners-up, FairPrice FITHack
+<li data-d="2017–18">1st &amp; 2nd Runners-up (team), .22 Revolver Shooting
 </ul>
-
-<script>
-  if (matchMedia('(prefers-color-scheme: dark)').matches) document.documentElement.classList.add('dark');
-</script>
-</body>
-</html>
+<script>matchMedia('(prefers-color-scheme:dark)').matches&&document.documentElement.classList.add('d')</script>
