@@ -1,0 +1,64 @@
+<!doctype html>
+<meta charset=utf8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=icon href=favicon.png>
+<title>joven — life</title>
+
+<style>
+  :root { background: #fff; color: #111; --m: #666 }
+  .d    { background: #111; color: #eee; --m: #888 }
+
+  body { font: 16px/1.6 ui-monospace, Menlo, monospace; max-width: 40em; margin: 4em auto; padding: 0 1.25em }
+  @media (max-width: 600px) { body { font-size: 11px } }
+
+  h1 { font-size: 1.4em; margin: 0 }
+  h2 { font-size: 1em; margin: 2em 0 .5em; letter-spacing: .08em }
+  p, li { margin: .25rem 0 }
+  ul { padding: 0; list-style: none }
+  a  { color: inherit; text-underline-offset: 3px }
+
+  h2, .s, li:after { color: var(--m) }
+  .s { font-size: .92em }
+  li:after { content: attr(d); float: right }
+
+  button {
+    position: fixed; top: 1em; right: 1em;
+    background: 0; border: 1px solid var(--m);
+    color: inherit; font: inherit; padding: .15em .5em;
+  }
+</style>
+
+<script>
+  h = document.children[0];
+  if (matchMedia('(prefers-color-scheme: dark)').matches) h.className = 'd';
+</script>
+
+<button onclick="h.classList.toggle('d')">◐</button>
+
+<h1><a href="index.html">wei kiat</a> (joven) soh</h1>
+<p class=s>son, brother, adventurer, maverick
+
+<h2>about</h2>
+<p>fucking around and finding out
+
+<h2>thoughts</h2>
+<ul>
+  <li> <a href="https://x.com/Joven25525/status/2056907090653045190">retardmaxxing</a> — stop optimising yourself into inaction
+</ul>
+
+<h2>places</h2>
+<p>china, indonesia, japan, korea, malaysia, singapore, thailand, usa, vietnam
+
+<h2>communities</h2>
+<ul>
+  <li> <a href="https://www.linkedin.com/company/menlo-house-sg/posts/?feedView=all">menlo house</a>
+  <li> n-house
+</ul>
+
+<h2>hobbies</h2>
+<ul>
+  <li> photography
+  <li> <a href="https://jovensoh.github.io/bookshelf/">reading</a>
+  <li> nature
+  <li> shooting
+</ul>
