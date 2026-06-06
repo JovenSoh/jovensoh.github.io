@@ -31,6 +31,10 @@
 <script>
   h = document.children[0];
   if (matchMedia('(prefers-color-scheme: dark)').matches) h.className = 'd';
+
+  addEventListener('DOMContentLoaded', () =>
+    document.querySelectorAll('a[href^="http"]').forEach(a => { a.target = '_blank'; a.rel = 'noopener' })
+  );
 </script>
 
 <button onclick="h.classList.toggle('d')">◐</button>
@@ -43,6 +47,7 @@
 
 <h2>thoughts</h2>
 <ul>
+  <li> <a href="https://x.com/Joven25525/status/2062355497533989349">asian strivers are the modern hippies</a> — completing the full circle
   <li> <a href="https://x.com/Joven25525/status/2056907090653045190">retardmaxxing</a> — stop optimising yourself into inaction
 </ul>
 
@@ -56,7 +61,7 @@
 </ul>
 
 <h2>hobbies</h2>
-<p>photography, <a href="https://jovensoh.github.io/bookshelf/">reading</a>, nature, shooting
+<p>photography, <a href="https://jovensoh.github.io/bookshelf/">reading</a>, nature, shooting, tetris
 
 <h2>crashout songs</h2>
 <p>love is gone, the scientist, let down

@@ -34,6 +34,11 @@
   // Respect system preference on first load. The toggle button flips it.
   h = document.children[0];
   if (matchMedia('(prefers-color-scheme: dark)').matches) h.className = 'd';
+
+  // External links open in a new tab.
+  addEventListener('DOMContentLoaded', () =>
+    document.querySelectorAll('a[href^="http"]').forEach(a => { a.target = '_blank'; a.rel = 'noopener' })
+  );
 </script>
 
 <button onclick="h.classList.toggle('d')">◐</button>
